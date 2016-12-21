@@ -1,0 +1,528 @@
+@charset "utf-8";
+/*CONTAINER STYLES*/
+body{
+	background: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.autocompleter{
+	width:400px;
+}
+
+.select{
+	margin: 0em 0;
+}
+
+.hour_select{
+	margin: 0em 0;
+	margin: 0em 0;
+	width: 50px;
+	text-align: center;
+}
+
+textarea{
+	margin: 0em 0;
+}
+
+div.label{
+	text-align:left;
+	font-weight:bold;
+}
+
+div.line{
+	margin-bottom:10px;
+}
+
+div.messages{
+	margin-bottom:10px;
+}
+
+div.buttons{
+	text-align:center;
+}
+
+div.title{
+	font-weight:bold;
+	text-transform:uppercase;
+	font-size:14px;
+	text-align:center;
+	margin-bottom:10px;
+}
+
+div.title label{
+	font-size:11px;
+	text-align:center;
+	font-style:italic;
+}
+
+div.subtitle{
+	font-weight:bold;
+	font-size:12px;
+	text-align:center;
+}
+
+div.center{
+    text-align:center;
+}
+
+ul.alerts{
+	font-weight:normal;
+	background:#FBE3E4;
+	border:2px solid #FBC2C4;
+	padding:.5em;
+	display:none;
+	color: #8a1f11;
+	margin-bottom:15px;
+	padding-left: 20px;
+	text-align: left;
+}
+
+ul.notice li{
+	list-style: none;
+}
+
+div.showMessages{
+	text-align:center;
+}
+
+div.separator{
+	height: 25px;
+	font-size: 11px;
+	padding-top: 3px;
+	color: #000000;
+	font-style: italic;
+	font-weight: bold;
+	padding-left: 10px;
+	border-bottom: solid 1px black;
+}
+
+div.banner_container{
+	max-height: 130px;
+}
+
+div.front_menu_container{
+	max-height: 30px;
+	background-color: #CAD4DD;
+}
+
+div.admin-container-menu div.admin-menu-item{
+	background:url(../img/template/default/menu_btn.png) no-repeat;
+	width: 98px;
+	height: 40px;
+	padding-top: 7px;
+	float: left;
+	color: #FFF;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+div.admin-container-menu div.admin-menu-item:hover{
+	
+	color: #EBD229;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	
+}
+
+div.admin-container-menu{
+
+	position:absolute;
+
+}
+
+
+
+/*END FORM STYLES*/
+
+#loader{
+	display: none;
+}
+
+#ajax_loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5000;
+    background-color: #407FBB;
+    width: 100%;
+    height: 100%;
+    filter:alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+}
+
+div.ajax_loader_text{
+	background:url(../img/ajax-loader.gif) no-repeat;
+	position: fixed;
+	padding-left: 35px;
+	padding-bottom: 10px;
+	top: 50%;
+    left: 50%;
+	color: #000000;
+	font-size: 150%;
+	font-weight: bold;
+    color: white;
+	z-index: 5001;
+}
+
+.tableTitle{
+        color: #000000;
+        padding:0 5px 0 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: bold;
+        text-transform:uppercase;
+        text-align:center;
+}
+
+.tableField{
+        padding:5px 5px 5px 5px;
+        text-align:center;
+        color:#000000;
+}
+
+div.alerts{
+	font-weight:normal;
+	font-weight: bold;
+	text-align: center;
+	background:#fdf5d7;
+	border:2px solid #fee097;
+	padding:.5em;
+	color:#8a5e11;
+	margin-bottom:15px;
+}
+
+.hidden{
+	display: none;
+}
+
+a{
+	cursor: pointer;
+}
+
+/*Calendar*/
+div.fc-content tbody {
+	background-color: #fff;
+    cursor: pointer;
+}
+
+/*ADMIN BANNER*/
+div.admin_banner{
+	background: url(../img/top_banner.png) no-repeat;
+	height: 168px;
+}
+
+/*ADMIN IMAGE LOGIN*/
+div.login{
+	background: url(../img/template/default/LOGO.png) no-repeat;
+	width: 450px;
+	height: 200px;
+}
+.select {
+    margin: 0 0;
+}
+
+
+/*DEFAULT LOGIN STYLES*/
+div.default_login_container{
+	background: url(../img/template/default/LOGO.png) no-repeat;
+	height: 640px;
+}
+
+div.default_login_form_container{
+	margin-top: 451px;
+}
+
+div.default_login_form_container div.password_container{
+	margin-top: 22px;
+}
+
+div.default_login_form_container input{
+	border: none;
+	background: none;
+}
+
+div.default_login_form_container div.button_container{
+	margin-top: 30px;
+}
+
+div.default_login_form_container div.button_container #btnSave{
+	background: url(../img/template/default/login_btn.png) no-repeat;
+	width: 115px;
+	height: 25px;
+	margin-left: 7px;
+	cursor: pointer;
+}
+/*END DEFAULT LOGIN STYLES*/
+
+/*MAIN PAGE STYLES*/
+.front-participant{
+	background: url(../img/template/default/participant_account_bkg.png) no-repeat;
+	z-index: 1;
+	height: 710px;
+	position: relative;
+}
+.top-container{
+	height: 560px;
+}
+.award-container{
+	background: url(../img/template/default/award_frame.png) no-repeat;
+	width: 181px;
+	height: 141px;
+	margin-left: 102px;
+	float: left;
+}
+.award-container img{
+	margin: 5px 30px 0px 33px;
+}
+.notebook{
+	min-height: 315px;
+	height: 315px;
+}
+.page{
+	cursor: pointer;
+	height: 300px;
+}
+
+.img_format{
+        position: absolute;
+        top: 10px;
+
+}
+
+#page_1{
+    position: absolute;
+}
+
+#page_2{
+    position: absolute;
+}
+#page_3{
+    position: absolute;
+}
+.page_show{
+    display:block; 
+}
+
+.page div.page_content{
+        position: absolute;
+        top: 10px;
+	margin: 55px 0 0 40px;
+}
+.bottom-container{
+	height: 137px;
+}
+.price-button-container{
+	margin-top: 66px;
+}
+.price-button{
+	background: url(../img/template/default/awards_btn.png) no-repeat;
+	min-height: 67px;
+	cursor: pointer;
+	margin-left: 8px;
+}
+.container_price_button{
+	padding-left: 30px;
+}
+.award-message{
+	font-size: 26px;
+	color: #fff;
+	font-style: italic;
+	padding-top: 10px;
+}
+
+
+.participant_points{
+	font-size: 26px;
+	color: #245197;
+	font-style: italic;
+	text-align: right;
+	font-weight: bold;
+	font-family: sans-serif;
+	
+}
+
+.participant_total_points_blue{
+	font-size: 105px;
+	color: #181241;
+	font-style: italic;
+	text-align: right;
+	font-weight: bold;
+	font-family: sans-serif;
+	padding-top: 100px;
+	padding-left: 15px;
+}
+
+.participant_total_points_yellow{
+	font-size: 100px;
+	color: #EBD229;
+	font-style: italic;
+	text-align: right;
+	font-weight: bold;
+	font-family: sans-serif;
+	padding-top: 100px;
+	padding-left: 10px;
+	position: absolute;
+	top: 95px;
+	left: 45px;
+}
+
+.points_pts{
+	font-size: 25px;
+	color: #EBD229;
+	font-style: italic;
+	text-align: right;
+	font-weight: bold;
+	font-family: sans-serif;
+	position: absolute;
+	top: 300px;
+	left: 60px;
+}
+
+.participant_win{
+	background: url(../img/template/default/win.png) no-repeat;
+	min-height: 50px;
+}
+
+/*VIRTUAL STORE */
+
+
+.title_main_page{
+	color: navy;
+        font-size: 30px;
+        font-style: italic;
+        font-weight: bold;
+        padding-left: 45px;
+        padding-top: 75px;
+}
+
+p.notebook_page_title{
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.notebook_award_data_container{
+	margin-bottom: 10px;
+}
+
+.notebook_more_container{
+	margin-top: 10px;
+}
+
+.empty_msg_container{
+	margin-top: 20px;
+}
+
+.format_select li:hover{
+cursor:pointer;
+background:#0066cc;
+width:100%;
+color:#ffffff;
+}
+
+.format_select{
+	margin-top: 10px;
+	background-image:url("../img/btn.png");
+	background-repeat: no-repeat;
+	height: 30px;
+}
+
+
+.title_main_result{
+	color: black;
+	font-size: 15px;
+	font-weight: bold
+}
+
+.title_main_result_detail{
+	color: black;
+	font-size: 13px;
+	font-weight: 200;
+}
+
+.main_result_detail{
+	color: black;
+	font-size: 13px;
+
+}
+
+.main_result{
+	color: black;
+	font-size: 15px;
+	
+}
+.image_virtual_store{
+	cursor: pointer;
+}
+
+
+
+/*ADMIN IMAGE LOGIN*/
+div.container_distributor{
+	background: url(../img/template/distributor/web_container_distributor.png) no-repeat;
+	height: 640px;
+}
+
+div.login_distributor{
+	background: url(../img/template/distributor/login_11.png) no-repeat;
+	height: 300px;
+}
+
+input.login_input {
+	border: none;
+	background: none;
+	height: 20px;
+}
+
+div.distributor_button_container{
+	margin-top: 20px;
+}
+
+div.distributor_button_container #btnSave{
+	background: url(../img/template/distributor/login_btn.png) no-repeat;
+	width: 158px;
+	height: 44px;
+	margin-left: 1px;
+	cursor: pointer;
+	border: none;
+}
+
+input.selected_btn{
+	background: url(../img/template/distributor/selected_btn.png) no-repeat;
+	width: 158px;
+	height: 44px;
+	margin-left: 1px;
+	cursor: pointer;
+	border: none;
+}
+
+
+div.distributor_button_container_selected{
+	margin-top: 20px;
+}
+
+div.distributor_button_container_selected #btnSave{
+	background: url(../img/template/distributor/selected_btn.png) no-repeat;
+	width: 158px;
+	height: 44px;
+	margin-left: 1px;
+	cursor: pointer;
+	border: none;
+}
+
+
+/*contenedor de productos*/
+.des-pedido-link{
+	color: navy;
+	font-size: 10px;
+	font-weight: bold
+}
+
+/*login_btn 
+
+
+END MAIN PAGE STYLES*/

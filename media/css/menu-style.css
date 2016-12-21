@@ -1,0 +1,77 @@
+#menu, #menu ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+	background: url(../img/submenu.png) repeat;
+	float: left;
+	width: 100%;
+    /*border-top: 1px solid #FFFFFF;*/
+}
+#menu li {
+    float: left;
+    line-height: 3em;
+    position: relative;
+    text-align:center;
+    min-width: 10em;
+    width: 125px;
+}
+#menu li ul {
+    display: none;
+    margin-left: 0px;
+    margin-top: 0px;
+    position: absolute;
+}
+#menu ul li ul {
+    margin-left: 125px;
+    margin-top: -38px;
+    *margin-left: 61px;
+}
+#menu li:hover ul, #menu li.over ul {
+    display: block;
+}
+#menu li:hover ul ul, #menu li.over ul ul {
+    display: none;
+}
+#menu ul li:hover ul, #menu ul li.over ul {
+    display: block;
+}
+#menu a {
+    background: url(../img/option.png) repeat;
+    /*border-right: 1px solid #FFFFFF;*/
+    color: #FFFFFF;
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+}
+#menu a:hover {
+    background-color: #FFD300;
+    color: #FFFFFF;
+}
+#menu ul {
+    border-top: 1px solid #FFFFFF;
+}
+#menu ul a {
+    /*background: url(../img/submenu.png) repeat;*/
+    /*border-bottom: 1px solid #FFFFFF;*/
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+}
+#menu {
+    z-index: 1;
+}
+#menu ul {
+    z-index: 2;
+}
+#menu ul ul {
+    z-index: 3;
+}
+* html ul li {
+    float: left;
+    height: 1%; 
+}
+* html ul li a {
+    height: 1%;
+}
+.submenu{
+    z-index: 3000 !important;
+}
